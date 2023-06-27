@@ -9,7 +9,8 @@ with base as (
 
     select
         property_total_money_raised_cleaned,
-        
+        property_funding_m_,
+
         {{
             fivetran_utils.fill_staging_columns(
                 source_columns=adapter.get_columns_in_relation(ref('stg_hubspot__company_tmp')),

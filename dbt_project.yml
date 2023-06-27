@@ -60,3 +60,6 @@ vars:
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
     hubspot__pass_through_all_columns: false
+
+    hubspot__company_pass_through_columns:
+      - name: "property_funding_m_" 

@@ -57,6 +57,6 @@ vars:
     ticket: "{{ source('hubspot','ticket') }}"
     hubspot__deal_pass_through_columns: []
     hubspot__contact_pass_through_columns: []
-    hubspot__company_pass_through_columns: ["property_funding_m_"]
+    hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
     hubspot__pass_through_all_columns: false

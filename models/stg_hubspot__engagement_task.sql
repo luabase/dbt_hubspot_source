@@ -35,7 +35,7 @@ field.
         cast(_fivetran_synced as {{ dbt.type_timestamp() }}) as _fivetran_synced,
         body as task_note,
 
-        completion_timestamp,
+        completion_date,
 
         engagement_id,
         for_object_type,

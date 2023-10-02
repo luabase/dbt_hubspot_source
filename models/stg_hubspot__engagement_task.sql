@@ -35,11 +35,7 @@ field.
         cast(_fivetran_synced as {{ dbt.type_timestamp() }}) as _fivetran_synced,
         body as task_note,
 
-        {% if 'tzinfo=<UTC>' not in results_list %}
-            {{ dbt.safe_cast('completion_date', 'timestamp') }} as completion_timestamp,
-        {% else %}
-            cast(completion_date as {{ dbt.type_timestamp() }}) as completion_timestamp,
-        {% endif %}
+        completion_timestamp,
 
         engagement_id,
         for_object_type,
